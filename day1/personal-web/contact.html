@@ -6,10 +6,13 @@
     <title>Persenal-web</title>
     <link rel="icon" href="aset/person.png" />
     <link rel="stylesheet" href="aset/style/tyle.css" />
+
+    <!-- BOOSTRAP -->
+    <link href="aset/boostrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body style="background-color: azure">
     <!-- navbar  -->
-    <div class="navbar">
+    <!-- <div class="navbar">
       <ul class="nav_list">
         <img src="aset/person.png" alt="" />
         <li><a href="indext.html">Home</a></li>
@@ -17,7 +20,30 @@
         <li><a href="testimonial.html" >Testimonials</a></li>
       </ul>
       <a href="#" class="contact">Contact Me</a>
-    </div>
+    </div> -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <img  src="aset/img/assets/img/logo.png" alt="Bootstrap" width="30" height="24">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="indext.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonial.html">Testimonials</a>
+            </li>
+          </ul>
+          <a class="btn btn-orengered" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+
 
     <!-- input -->
     <div class="input">
@@ -52,5 +78,6 @@
       </form>
     </div>
     <script src="aset/js/js.js"></script>
+    <script src="aset/boostrap/bootstrap.bundle.min.js" ssintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -58,10 +58,7 @@ function tampilData() {
   }
 }
 
-function tes(){
-  let blogList = document.getElementById("BlogList");
-  blogList.innerHTML = 
-}
+
 
 function formatDateToWIB() {
   let date = new Date();
