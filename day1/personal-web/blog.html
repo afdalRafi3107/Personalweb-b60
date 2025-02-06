@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Persenal-web</title>
+    <link rel="icon" href="aset/person.png" />
+    <link rel="stylesheet" href="aset/style/tyle.css" />
+  </head>
+  <body style="background-color: azure">
+    <!-- navbar  -->
+    <div class="navbar">
+      <ul class="nav_list">
+        <img src="aset/person.png" alt="" />
+        <li><a href="indext.html">Home</a></li>
+        <li><a href="blog.html" class="menu-active">Blog</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+      </ul>
+      <a href="contact.html" class="contact">Contact Me</a>
+    </div>
+
+    <!-- Blog page -->
+    <!-- create blog -->
+    <form id="create-blog" class="CreateBlogForm" onsubmit="addBlog(event)">
+      <h1>Create Blog</h1>
+
+      <div class="form-field">
+        <label for="title">title</label>
+        <input id="title" type="text" required />
+      </div>
+
+      <div class="form-field">
+        <label for="content">content</label>
+        <textarea id="content" rows="6" required></textarea>
+      </div>
+
+      <div class="form-field">
+        <label for="image">upload image</label>
+        <input id="image" type="file" required />
+      </div>
+
+      <div class="buttonContainer">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <!-- blog list -->
+    <section id="BlogList" class="blogList">
+      <article class="blogItem">
+        <div class="blogImage">
+          <img src="aset/img/coding-man.jpg" alt="" />
+        </div>
+
+        <div class="blogTags">
+          <div class="blogItem-button">
+            <button class="blog-edit-button">Edit blog</button>
+            <button class="blog-post-button">Post blog</button>
+          </div>
+          <a href="blog-detail.html" style="text-decoration: none">
+            <h1 style="color: black">pasar coding di Indonesia</h1>
+          </a>
+          <p>30 Jannuari 2025 11:25 WIB | afdal Rafi</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid
+            totam enim facere numquam minima reiciendis. Itaque eligendi ipsum
+            commodi totam, sapiente aspernatur fugiat quod beatae, fugit
+            voluptatibus mollitia cupiditate?
+          </p>
+          <p class="blogItemTimes">1 hour ago</p>
+        </div>
+      </article>
+    </section>
+    <script src="aset/js/blog.js"></script>
+  </body>
+</html>

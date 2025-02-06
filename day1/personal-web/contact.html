@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Persenal-web</title>
+    <link rel="icon" href="aset/person.png" />
+    <link rel="stylesheet" href="aset/style/tyle.css" />
+  </head>
+  <body style="background-color: azure">
+    <!-- navbar  -->
+    <div class="navbar">
+      <ul class="nav_list">
+        <img src="aset/person.png" alt="" />
+        <li><a href="indext.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="testimonial.html" >Testimonials</a></li>
+      </ul>
+      <a href="#" class="contact">Contact Me</a>
+    </div>
+
+    <!-- input -->
+    <div class="input">
+      <form class="contact-form" onsubmit="submitForm()">
+        <div class="contact-filed">
+          <label for="nama">Name</label>
+          <input id="nama" type="text" />
+        </div>
+        <div class="contact-filed">
+          <label for="email">Email</label>
+          <input id="email" type="text" />
+        </div>
+        <div class="contact-filed">
+          <label for="subjek">subject</label>
+          <input id="subjek" type="text" />
+        </div>
+        <div class="contact-filed">
+          <label for="skill">Skill</label>
+          <select name="" id="skill">
+            <option value="">Select Any Skill..</option>
+            <option value="FrondEnd">FrondEnd</option>
+            <option value="BackEnd">BackEnd</option>
+          </select>
+        </div>
+        <div class="contact-filed">
+          <label for="message">Message</label>
+          <textarea name="" id="message"></textarea>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="aset/js/js.js"></script>
+  </body>
+</html>

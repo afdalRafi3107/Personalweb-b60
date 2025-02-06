@@ -1,0 +1,44 @@
+.testimonilas-star-button{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonilas-star-button button{
+    padding: 5px 15px;
+    border: none;
+    background-color: orangered;
+    font-weight: bold;
+    color: aliceblue;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  
+}
+
+.testimonials-list{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+
+}
+.testimonials-list article{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.testimonials-list article img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.testimonials-list article .testimonial-caption-item {
+    font-style: italic;
+    color: #3c3b3b;
+    font-weight: bold;
+}

@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+}
+nav{
+  background-color: rgb(229, 229, 229);
+  padding: 5px 30px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+.navbar ul img {
+  width: 40px;
+}
+.navbar ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+}
+.menu-active {
+  color: orangered !important;
+  font-weight: bold;
+}
+.navbar .contact {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  background-color: orangered;
+  padding: 10px 30px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.mobile-menu{
+  display: none;
+}
+
+/* profile card */
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+.mainContent{
+display: flex;
+padding: 10px;
+gap: 30px;
+}
+#introduction{
+  flex: 3;
+  padding: 20px;
+
+}
+.Waht-i-do h1{
+  margin: 0;
+}
+
+.technologis{
+  display: flex;
+  gap: 20px;
+}
+
+.profile {
+  width: 400px;
+  padding: 1%;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 2px 2px 5px black;
+  flex: 1;
+}
+.profile .profile-table {
+  border: solid;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+#indroduction{
+  flex: 3;
+}
+
+.media a{
+  text-decoration: none;
+  margin-right: 15px  ;
+}
+/* contact style */
+
+.contact-form {
+  width: 500px;
+  margin: 100px auto;
+}
+
+.contact-filed {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.contact-form {
+  gap: 10px;
+}
+
+.contact-form input,
+select,
+textarea,
+#title {
+  padding: 10px;
+  background-color: aliceblue;
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-size: 17px;
+}
+
+.contact-form button {
+  padding: 12px 25px;
+  border: none;
+  background-color: orangered;
+  font-weight: bold;
+  color: aliceblue;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: rgb(248, 104, 52);
+}
+
+/* cretae blog style */
+.CreateBlogForm {
+  width: 500px;
+  margin: 100px auto;
+}
+.CreateBlogForm h1 {
+  text-align: center;
+}
+
+.form-filed {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.CreateBlogForm input,
+select,
+textarea {
+  padding: 10px;
+  background-color: aliceblue;
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-size: 17px;
+  width: 96%;
+}
+.buttonContainer {
+  text-align: right;
+}
+
+.CreateBlogForm button {
+  padding: 12px 25px;
+  border: none;
+  background-color: orangered;
+  font-weight: bold;
+  color: aliceblue;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.CreateBlogForm button:hover {
+  background-color: rgb(248, 104, 52);
+}
+
+/* blog list style */
+.blogItem {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid rgb(153, 155, 157);
+  border-radius: 8px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.blogItem-button {
+  text-align: right;
+}
+.blogItemTimes {
+  text-align: right;
+  font-size: 13px;
+  color: gray;
+}
+.blog-edit-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: orangered;
+  font-weight: bold;
+  color: aliceblue;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.blog-post-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: rgb(167, 167, 167);
+  font-weight: bold;
+  color: aliceblue;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.blogList {
+  width: 80%;
+  margin: 20px auto;
+}
+.blogImage {
+  width: 24%;
+  margin: 0;
+  padding: 0;
+}
+.blogTags {
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+.blogImage img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* blog detail styles */
+.blogDetail {
+  width: 70%;
+  margin: 30px auto;
+}
+.blogDetail img {
+  width: 80%;
+}
+
+/* blog item */
+
+
+
+/* MEDIA SCREEN */
+
+@media only screen and (max-width: 600px) {
+  .mainContent {
+    display: contents;
+  }
+  .profile{
+    padding: 10px;
+    margin: auto;
+  }
+  #introduction{
+    padding: 0 30px 30px;
+  }
+  .technologis{
+    flex-direction: column;
+  }
+  .navbar{
+    display: none;
+  }
+  .mobile-menu{
+    justify-content: space-between;
+    
+  }
+  nav{
+    background-color: rgb(229, 229, 229);
+    padding: 20px 100px;
+  }
+}
