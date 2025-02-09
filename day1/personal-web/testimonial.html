@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Persenal-web</title>
+    <title>Testimonials</title>
     <link rel="icon" href="aset/person.png" />
     <link rel="stylesheet" href="aset/style/tyle.css" />
     <link rel="stylesheet" href="aset/style/testimonilas.css">
@@ -43,28 +43,39 @@
     <h3 style="text-align: center;">Rating By Stars</h3>
     
     <!-- stars button -->
-    <div id="testimonialsList" class="testimonilas-star-button">
-      <button>All</button>
-      <button>1★</button>
-      <button>2★</button>
-      <button>3★</button>
-      <button>4★</button>
-      <button>5★</button>
+    <div id="testimonialsList-stars" class="testimonilas-star-button">
+      <button onclick="showAllTestimonials()">All</button>
+      <button onclick="filterTestimonialsByStar(1)">1★</button>
+      <button onclick="filterTestimonialsByStar(2)">2★</button>
+      <button onclick="filterTestimonialsByStar(3)">3★</button>
+      <button onclick="filterTestimonialsByStar(4)">4★</button>
+      <button onclick="filterTestimonialsByStar(5)">5★</button>
     </div>
 
     <!-- testimopnial List -->
 
-    <div id="testimonialsList" class="testimonials-list">
+    <div id="testimonialsList" class="testimonials-list container-md" style="background-color: aqua;">
       <article>
-        <img src="aset/img/assets/img/coding.jpg" alt="">
+        <!-- <img src="aset/img/assets/img/coding.jpg" alt="testimonial-image">
         <p class="testimonial-caption-item">
           "keren buanget"
         </p>
         <p style="text-align: right;">- M Afdal</p>
-        <p style="text-align: right;">5★</p>
+        <p style="text-align: right;">5★</p> -->
+
+        <div class="card" style="width: 18rem;">
+          <img src="aset/img/assets/img/coding.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Keren Banget</h5>
+            <p class="card-text" style="text-align: right;"> - Afdal rafi</p>
+            <p class="card-text" style="text-align: right;"> 5★</p>
+            
+          </div>
+        </div>
       </article>
     </div>
   </main>
+  
 
     <script src="aset/js/testimonial.js"></script>
     <script src="aset/boostrap/bootstrap.bundle.min.js" ssintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
