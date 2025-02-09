@@ -29,7 +29,7 @@ function fetchTestimonials() {
         (testimonial) => `
           <article>
           <div class="card">
-          <img src="aset/img/assets/img/coding.jpg" class="card-img-top" alt="...">
+          <img src="img/assets/img/coding.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${testimonial.caption}</h5>
             <p class="card-text" style="text-align: right;"> - ${testimonial.author}</p>
